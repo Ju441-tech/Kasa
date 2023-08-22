@@ -1,0 +1,26 @@
+.carrousel-main{
+    width:100%;
+    height:300px;  
+    display:flex;
+    align-items: center;
+    
+}
+.carrousel-arrows{
+    width:100%;
+  display: flex;
+  justify-content: space-between; 
+  position:absolute; 
+   
+}
+.carrousel-image{
+    position:relative;
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.carrousel-counter{
+    position:absolute;
+   
+}
+
