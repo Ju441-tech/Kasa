@@ -3,6 +3,7 @@ import logements from '../../datas/logements.json'
 import './flat.css'
 import Collapse from "../../components/Collapse"
 import Carroussel from '../../components/Carrousel'
+import Rating from '../../components/Rating'
 
 
 function FicheLogement() {
@@ -29,7 +30,7 @@ function FicheLogement() {
                             <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
 
                         </div>
-                        <span className="logement-rating">Nombre d'étoiles : {logement.rating}</span>
+                        <Rating className="logement-rating" stars={logement.rating}/>
 
                     </div>
 

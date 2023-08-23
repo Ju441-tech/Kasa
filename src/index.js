@@ -8,7 +8,9 @@ import Footer from './components/Footer'
 import Error from './pages/404'
 import Header from './components/Header'
 import About from './pages/About'
-
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+</style>
 
 
 

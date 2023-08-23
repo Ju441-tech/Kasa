@@ -5,7 +5,7 @@ import logo from '../../assets/logo-rouge.png'
 
 function Header() {
     return (
-        <div className='header'>
+        <div className='header-main'>
             <img src={logo} alt="logo-rouge-Kasa" title="logo rouge Kasa" />
             <nav className="nav">
                 <Link to="/" id="link-acceuil">Accueil</Link>

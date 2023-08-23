@@ -6,8 +6,10 @@ import Baner from '../../components/Baner'
 
 function Home() {
 const text="Chez vous, partout et ailleurs."
-    return (<div>
+    return (<div className='home-main'>
+        <div className='home-baner'>
         <Baner photo={photo} text={text}/>
+        </div>
         <Gallery/>
         
     </div>)

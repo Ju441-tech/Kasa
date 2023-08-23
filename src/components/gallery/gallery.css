@@ -8,8 +8,6 @@
 
 .carre-gris{
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 30px;
     padding: 30px;
     background-color: #eeeee4;
@@ -24,9 +22,9 @@
    
 }
 .card{
-    width:22%;
+    width:30%;
     height:250px;
-    
+   
     border-radius: 5px;
     display:flex;
     flex-direction: column;
@@ -38,9 +36,9 @@
 }
 
 .card-img{
-    height:90%;
+    
     width:100%;
-    object-fit: cover;
+    object-fit:cover;
   
     border-radius: 5px;
     
@@ -54,6 +52,9 @@
    
 }
 .card-title{
-    
+    display:flex;
+    align-items:center;
+    margin-left:10px;
+    margin-bottom:5px;
     width:50%;
 }
