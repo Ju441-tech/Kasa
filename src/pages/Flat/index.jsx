@@ -16,11 +16,16 @@ function FicheLogement() {
                 
                 <div className="logement-item">
                     <div className="logement-ident">
+                        <div className='logement-name'>                       
                         <h2 className="logement-title">{logement.title}</h2>
-                        <h3 className="logement-location">{logement.location}</h3>
+                        <h3 className="logement-subtitle">{logement.location}</h3>
+                        </div>
+                        
+                        <div className='logement-grid-tags'>
                         <ul className="logement-tags">{logement.tags.map((tag) =>
                             <li key={tag} className="tag">{tag}</li>)}
                         </ul>
+                        </div>
     
                     </div>
 
@@ -39,8 +44,8 @@ function FicheLogement() {
 
 
                 <div className="logement-collapse">
-                    <Collapse title="Description" content={logement.description} />
-                    <Collapse title="Equipements" content={logement.equipments} />
+                    <Collapse title="Description" contentDescription={logement.description} />
+                    <Collapse title="Equipements" contentList={logement.equipments} />
                 </div>
             </div>)
         }

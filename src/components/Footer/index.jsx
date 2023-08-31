@@ -1,9 +1,11 @@
 
 import './footer.scss'
-import logo from  '../../assets/footer-baner.svg'
+import footerdesktop from  '../../assets/footer-desktop.svg'
+import footermobile from  '../../assets/footer-mobile.png'
 function Footer (){
     return (<div>
-        <img className='footer' src={logo} alt="logo-blanc-Kasa"/>
+        <img className='footer-desktop' src={footerdesktop} alt="footer-desktop"/>
+        <img className='footer-mobile' src={footermobile} alt="footer-mobile"/>
 
     </div>)
 }

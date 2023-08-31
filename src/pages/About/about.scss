@@ -1,6 +1,21 @@
 .about-main{
-    margin: 50px 100px 50px 100px;
+   
     display:flex;
     flex-direction: column;
     gap:50px;
+}
+.collapses-grid{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    margin-left:210px;
+    margin-right:210px;
+    margin-bottom:30px;
+    font-size:24px;
+}
+@media screen and (width<=768px){
+.collapses-grid{
+  margin-left:30px;
+  margin-right:30px;
+}
 }

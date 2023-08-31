@@ -13,23 +13,33 @@
     padding-bottom: 10px;
    
 }
-.collapse-title-icon{
+.collapse-icon-down{
+    display:none;
+}
+.collapse-icon-up{
     margin-right:10px;
     height:20px;
     width:28px;
     cursor:pointer;
 }
-.collapse-title-icon:active{
+.collapse-icon-up:active{
     
-    animation: rotate 100ms;
+    animation: tourne 200ms ;
+    animation-fill-mode: forwards;
 }
-@keyframes rotate{
-    0%{}
-    
-    100%{
+@keyframes tourne {
+    0%{
+
+    }
+    50%{
         rotate:(180deg);
     }
+    100%{
+        opacity: 0%;
+    }
+    
 }
+
 .collapse-title-title{
     color:#ffffff;
     margin-left:10px;
@@ -40,7 +50,7 @@
     
    
    padding-top:15px;
-   padding-bottom:10px;
+   
    
     width:100%;
     background: #f6f6f6;
@@ -54,10 +64,12 @@
   
 }
 .collapse-content-text{
-    
+    list-style: none;
+    margin-top: -5px;
     margin-left:10px;
     margin-right: 10px;
     font-size:18px;
+    padding-left:0;
   
 }
 
