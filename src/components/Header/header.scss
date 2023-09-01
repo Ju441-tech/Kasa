@@ -5,6 +5,7 @@ $main-color: #ff6060;
     align-items: center;
     max-width:1240px;
     padding-bottom: 30px;
+    margin:auto;
 }
 
 .nav {
@@ -38,8 +39,8 @@ $main-color: #ff6060;
 
 @media screen and (width<=768px) {
     .header-main {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .header-logo {

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import logements from '../../datas/logements.json'
-import './flat.css'
+import './flat.scss'
 import Collapse from "../../components/Collapse"
 import Carroussel from '../../components/Carrousel'
 import Rating from '../../components/Rating'
@@ -44,8 +44,8 @@ function FicheLogement() {
 
 
                 <div className="logement-collapse">
-                    <Collapse title="Description" contentDescription={logement.description} />
-                    <Collapse title="Equipements" contentList={logement.equipments} />
+                    <Collapse title="Description" contentType={"text"} content={logement.description} />
+                    <Collapse title="Equipements" content={logement.equipments} />
                 </div>
             </div>)
         }

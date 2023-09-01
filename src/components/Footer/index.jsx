@@ -1,12 +1,14 @@
-
+import logo from '../../assets/logo-blanc.svg'
 import './footer.scss'
-import footerdesktop from  '../../assets/footer-desktop.svg'
-import footermobile from  '../../assets/footer-mobile.png'
-function Footer (){
-    return (<div>
-        <img className='footer-desktop' src={footerdesktop} alt="footer-desktop"/>
-        <img className='footer-mobile' src={footermobile} alt="footer-mobile"/>
 
-    </div>)
+function Footer() {
+    return (
+        <div className='footer-main'>
+            <img src={logo} alt='logo-blanc' className='footer-logo' />
+            <div className='footer-content'>
+                <p className='footer-title'>© 2020 Kasa. All rights reserved</p>
+            </div>
+        </div>
+    )
 }
 export default Footer

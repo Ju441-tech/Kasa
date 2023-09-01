@@ -1,7 +1,7 @@
 import Logements from '../../datas/logements.json'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './gallery.css'
+import './gallery.scss'
 
 
 

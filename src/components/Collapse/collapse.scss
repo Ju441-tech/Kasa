@@ -2,19 +2,22 @@
     width:100%;
 }
 .collapse-title{
-  
     display:flex;
     justify-content: space-between;
     background: #ff6060;
     color:white;
-    
     border-radius: 5px;
     padding-top:10px;
-    padding-bottom: 10px;
-   
+    padding-bottom: 10px;  
 }
 .collapse-icon-down{
-    display:none;
+    margin-right:10px;
+    height:20px;
+    width:28px;
+    cursor:pointer;
+}
+.collapse-icon-down:active{
+
 }
 .collapse-icon-up{
     margin-right:10px;
@@ -22,20 +25,19 @@
     width:28px;
     cursor:pointer;
 }
-.collapse-icon-up:active{
+.collapse-icon-up:active{   
+    animation: tourne 5s ;
     
-    animation: tourne 200ms ;
-    animation-fill-mode: forwards;
 }
 @keyframes tourne {
     0%{
 
     }
     50%{
-        rotate:(180deg);
+        
     }
     100%{
-        opacity: 0%;
+        rotate:(720deg);
     }
     
 }
@@ -65,9 +67,8 @@
 }
 .collapse-content-text{
     list-style: none;
-    margin-top: -5px;
-    margin-left:10px;
-    margin-right: 10px;
+    margin:10px 24px 24px 24px;
+    padding-bottom: 24px;
     font-size:18px;
     padding-left:0;
   

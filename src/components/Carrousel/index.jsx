@@ -10,8 +10,10 @@ function Carrousel({ listePhotos}) {
 const [plusun, SetPlusUn]=useState(0)
 
  const numberPhotos = listePhotos.length
-    return <div className='carrousel-main'>
+    return (
+    <div className='carrousel-main'>
         <img className="carrousel-image" alt={listePhotos[plusun]} title={listePhotos[plusun]} src={listePhotos[plusun]} />
+        {numberPhotos > 1 &&
         
             <div className='carrousel-arrows'>
             
@@ -19,11 +21,11 @@ const [plusun, SetPlusUn]=useState(0)
             <img src={arrowRight} alt={arrowRight} onClick={()=> plusun <numberPhotos-1 ? SetPlusUn( plusun+1): SetPlusUn(0)}/>
             
                        
-            </div>       
+            </div> }     
                 
        
         <h1 className='carrousel-counter' > {plusun+1}/{numberPhotos}</h1>
 </div>
 
-}
+)}
 export default Carrousel

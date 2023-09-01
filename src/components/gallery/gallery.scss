@@ -30,7 +30,7 @@
 .carre-gris {
     margin-bottom: 30px;
     padding: 30px;
-    background-color: #eeeee4;
+    background-color: #f6f6f6;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -54,11 +54,10 @@
     .carre-gris {
         padding: 0 0 30px 0;
         background-color: #ffffff;
-        margin: 0;
+        
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
-        margin-right: 30px;
+       
     }
 
 
