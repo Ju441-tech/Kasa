@@ -17,7 +17,9 @@ function APropos() {
 
       <Baner photo={photo} className='about-baner'/>
         <div className='collapses-grid'>
-            <Collapse title={titre1} contentType="text" content={contenu1} className='collapse-label'/>
+          
+            <Collapse title={titre1} contentType="text" content={contenu1} />
+          
             <Collapse title={titre2} contentType="text" content={contenu2} />
             <Collapse title={titre3} contentType="text" content={contenu2} />
             <Collapse title={titre4} contentType="text" content={contenu4} />

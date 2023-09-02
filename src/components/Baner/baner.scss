@@ -1,37 +1,38 @@
 .baner {
 
-    
-    height:223px;
-    background-repeat:no-repeat;
-    background-size:cover;
-    border-radius: 25px;
-    background-position:center;
+    position:relative;
+    height:223px;  
+    border-radius: 25px;  
     display:flex;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../../assets/img-home.png');
     align-items: center;
     justify-content: center;
-    
+    max-width: 1240px;
+    margin:auto;
+    margin-bottom: 30px;
     
 }
 
 .image {
-   
+   position:absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    filter: brightness(0.7);
    
 
 }
 
 .title {
+    position:absolute;
     color: #ffffff;
     font-size: 48px;
+    font-weight: 500;
 }
 
 @media screen and (width<=768px) {
     .baner {
-       
+       margin:0 20px 20px 20px;
         height: 111px;
     }
 
