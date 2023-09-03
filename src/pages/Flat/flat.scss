@@ -1,114 +1,185 @@
+.flat-main {
+    max-width: 1240px;
+    margin: auto;
+    margin-bottom: 30px;
 
-.logement-item{
-    margin-top:0;
-    display:flex;
+}
+
+.logement-item {
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left:100px;
-    margin-right:100px;
-   
-   
 }
-.logement-ident{
-    display:flex;
+
+.logement-ident {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
- 
-    
-   
+    margin-top:20px;
 }
 
-.logement-title{
-    margin-block:0;
-    color:#ff6060;
-    font-size:36px;
-   
-}
-.logement-subtitle{
-    margin-block:0;
-    margin-top:5px;
-    color:#ff6060;
-    font-size:18px;
+.logement-title {
+    margin-block: 0;
+    color: #ff6060;
+    font-size: 36px;
+    font-weight: 500;
 }
 
-.logement-tags{
-    display:flex;
+.logement-subtitle {
+    margin-block: 0;
+    margin-top: 5px;
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logement-grid-tags {
+    margin: auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logement-tags {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap:wrap;
-    gap:20px;
-    list-style: none;  
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
     padding-left: 0;
-   
+
+
 }
-.tag{
-    padding:5px 40px 5px 40px;
+
+.tag {
+    padding: 5px 40px 5px 40px;
     background: #ff6060;
     border-radius: 12px;
-    color:#ffffff;
-    font-size:14px;
-    
+    color: #ffffff;
+    font-size: 14px;
+
 }
-.logement-host{
-    display:flex;
+
+.logement-host {
+    display: flex;
     flex-direction: column;
-    
+
 }
-.host-ident{
-    display:flex;
+
+.host-ident {
+    display: flex;
     flex-direction: row;
 }
-.host-name{
-    color:#ff6060;
-    font-size:18px;
+
+.host-name {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    border: solid 1px black;
     
 }
-.host-picture{
+
+.host-picture {
     margin-top: 20px;
-    border-radius:60px;
+    border-radius: 60px;
 }
-.logement-collapse{
-    display:flex;
+
+.logement-rating {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 196px;
+    margin-left:auto;
+}
+
+.greystar,
+.redstar {
+    height: 36px;
+    width: 36px;
+}
+
+.logement-collapse {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:76px;
-    margin-left:100px;
-    margin-right:100px;
-    margin-bottom:30px;
+    gap: 76px;
 }
-@media screen and (width<=768px){
-    .logement-item{
-        flex-direction: column;
-        padding-bottom:30px;
-    }
-    .logement-collapse{
-        flex-direction: column;
-        gap:30px;
-        margin-left:30px;
-        margin-right:30px;
-    }
-    .logement-item{
-        margin-left:30px;
-        margin-right:30px;
-    }
-    #carrousel{
-        margin-left:30px;
-        margin-right:30px;
-    }
-    .logement-host{
-        flex-direction:row-reverse;
+.collapse-tile{
+    font-size: 18px;
+    font-weight: 500;
+}
 
-        align-items: center;
-        
+@media screen and (width<=768px) {
+    .flat-main {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .host-ident{
-        margin-left:auto;
+
+    .logement-item {
+        flex-direction: column;
+    }
+    .logement-ident{
+        margin-top:10px;
+    }
+    .logement-title {
+        font-size: 18px;
+    }
+
+    .logement-subtitle {
+        font-size: 14px;
+    }
+
+    .tag {
+        font-size: 10px;
+    }
+
+    .logement-collapse {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    #carrousel {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .logement-host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .host-ident {
+        margin-left: auto;
         flex-direction: row;
         align-items: center;
-        gap:10px;
+        gap: 10px;
+        margin-bottom:10px;
     }
-    .host-picture{
-        margin-top:0;
+
+    .host-name {
+        font-size: 12px;
     }
-    
+
+    .host-picture {
+        margin-top: 0;
+        height: 32px;
+        width: 32px;
+    }
+
+    .greystar,
+    .redstar {
+        width: 18px;
+        height: 18px;
+    }
+    .logement-rating{
+        margin:0;
+        margin-bottom:14px;
+    }
 }
