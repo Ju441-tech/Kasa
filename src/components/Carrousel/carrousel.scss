@@ -2,11 +2,10 @@
     position: relative;
     height: 415px;
     border-radius: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .carrousel-image {
@@ -17,36 +16,56 @@
     object-fit: cover;
 }
 
-.carrousel-arrows {
+.carrousel-setter {
     position: absolute;
     width: 100%;
     display: flex;
+    flex-direction: column;
+
+}
+
+.carrousel-arrows {
+    display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .carrousel-arrows img {
-    width: 50px;
-    height: 79px;
+
+    width: 47px;
+    height: 80px;
+    cursor: pointer;
 }
 
 .carrousel-counter {
     position: absolute;
     color: #ffffff;
-    bottom: 10px;
     left: 50%;
+    top: 180px;
     font-size: 18px;
 
 }
 
 @media screen and (width<=768px) {
     .carrousel-main {
-        margin-left: 30px;
-        margin-right: 30px;
         height: 255px;
     }
 
     .carrousel-counter {
         display: none;
+    }
+
+    .carrousel-arrows {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .carrousel-arrows img {
+
+        width: 24px;
+        height: 24px;
     }
 
 }
