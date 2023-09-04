@@ -1,6 +1,6 @@
 .footer-main {
     max-width: 1440px;
-    margin:auto;
+    margin: auto;
     background-color: black;
     display: flex;
     height: 209px;
@@ -13,36 +13,38 @@
     width: 122px;
     height: 39.44px;
 }
-.footer-content{
+
+.footer-content {
     margin-top: 30px;
 }
 
 .footer-title {
-  
+
     color: #ffffff;
     font-size: 24px;
 }
 
 @media screen and (width<=768px) {
-   
+
     .footer-main {
         height: 209px;
 
     }
-    .footer-content{
-        margin-top:0;
-        width:130px;
+
+    .footer-content {
+        margin-top: 0;
+        width: 130px;
         display: flex;
-       
-       
+
+
     }
 
     .footer-title {
-       
-        margin-left:15px;
+
+        margin-left: 15px;
         font-size: 12px;
-       
-        
-       
+
+
+
     }
 }

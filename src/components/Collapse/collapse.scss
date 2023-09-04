@@ -12,18 +12,24 @@
     
 }
 
-.collapse-icon-up{
+.collapse-icon{
     margin-right:10px;
-    height:20px;
-    width:28px;
-    cursor:pointer;
-    transform:rotate(180deg);
-    transition-duration: 3s;
-    
+    margin-right:20px;
+    height:32px;
+    width:32px;
+    cursor:pointer;   
 }
-.turn{
-    transform:rotate(180deg);
-    transition-duration: 3s;
+.collapse-icon img{
+    width:24px;
+    height:13.71px;
+}
+.close{
+   
+    transition-duration: 0.7s;
+}
+.open{
+    transform:rotate(-180deg);
+    transition-duration: 0.7s;
 }
 
 
@@ -41,16 +47,10 @@
     position:relative;
     top:-5px;
     z-index: -1;
-    animation: try 0.4s; 
+   
 }
-@keyframes try{
-    0%{
-        margin-top:-100px;
-    }
-    100%{
-        margin-top:0px;
-    }
-}
+
+
 .collapse-content-text{
     overflow-y:hidden;
     overflow-x:hidden;
@@ -60,5 +60,11 @@
     font-size:18px;
     padding-left:0;
   
+}
+@media screen and (width<768px){
+  
+    .collapse-icon{
+        
+    }
 }
 
