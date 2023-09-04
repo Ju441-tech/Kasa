@@ -1,30 +1,32 @@
 import './collapse.scss'
 import { useState } from 'react'
-import up from '../../assets/dropdown-up.svg'
+import icon from '../../assets/dropdown-up.svg'
 
 
 
 function Collapse({ content, title, contentType = "list" }) {
 
   const [isopen, setOpen] = useState(false)
-  const [rotate, setRotate] = useState("")
+  const [rotate, setRotate] = useState()
   
+
   function toogle() {
-    console.log('hello')
+  
     rotate === 'open' ? setRotate("close") : setRotate("open")
     setOpen(!isopen)
     
   }
+  
 
   return (
     <div className='collapse-main'>
       <div className='collapse-title'>
         <div className='collapse-title-title'>{title}</div>
-        {<img className={` collapse-icon ${rotate}`} src={up} alt={up} onClick={toogle} />}
+        {<img className={` collapse-icon ${rotate}`} src={icon} alt={icon} onClick={toogle} />}
 
       </div>
 
-      {isopen && <div className='collapse-content'>
+      {isopen && <div className='collapse-content'  >
         {contentType === 'list' ?
           (
             <ul className='collapse-content-text'>

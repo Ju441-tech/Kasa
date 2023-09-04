@@ -12,7 +12,7 @@ function FicheLogement() {
     for (let logement of logements) {
         if (logementId === logement.id) {
             return (<div className="flat-main">
-                <Carroussel listePhotos={logement.pictures} />
+                <Carroussel keyName={logement.pictures} listePhotos={logement.pictures} />
 
                 <div className="logement-item">
                     <div className="logement-ident">
@@ -31,9 +31,9 @@ function FicheLogement() {
 
                     <div className="logement-host">
                         <div className="host-ident">
-                            <h3 className="host-name">a mettre sur 2 lignes avec map et si on lit
+                            <h3 className="host-name">a mettre sur 2 lignes
                             un" " espace vide, on met une blaise br{logement.host.name}</h3>
-                            <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
+                            <img className="host-picture" key={logement.host.picture} src={logement.host.picture} alt={logement.host.name} />
 
                         </div>
                         <div className="logement-rating">

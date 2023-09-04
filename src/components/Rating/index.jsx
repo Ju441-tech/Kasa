@@ -1,29 +1,23 @@
 import './Rating.scss'
-import greyStar from '../../assets/grey-star.svg'
-import redStar from '../../assets/yellow-star.svg'
-import { useState } from 'react'
+import greyStar from'../../assets/grey-star.svg'
+import redStar from '../../assets/red-star.svg'
+
 
 function Rating({ stars }) {
   const maxStars = [1, 2, 3, 4, 5]
-  const ratingStars = []
-  const result = []
-  for (let i = 0; i < stars; i++) {
-    ratingStars.push(i + 1)
-
-  }
-  for (let i = 0; i < 5; i++) {
-
-    maxStars[i] === ratingStars[i] ? result.push('redstar') : result.push('greystar')
-  }
 
 
+
+  console.log(stars)
   return (<div className='rating-main'>
 
 
-    {result.map((element) =>
-      <img src={redStar} className={element}/>
-      
-    )}
+    {maxStars.map((element)=>
+      stars>=(element) ? 
+      (<img  alt="stars" src={redStar} className='star' />
+      ):(
+      <img  alt="stars" src={greyStar} className='star' />))}
+    
 
 
 

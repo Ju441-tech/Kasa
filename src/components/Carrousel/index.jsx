@@ -3,7 +3,7 @@ import './carrousel.scss'
 import arrowLeft from '../../assets/arrow-left.svg'
 import arrowRight from '../../assets/arrow-right.svg'
 import { useState } from 'react'
-function Carrousel({ listePhotos }) {
+function Carrousel({ listePhotos, keyName }) {
 
 
 
@@ -12,7 +12,7 @@ function Carrousel({ listePhotos }) {
     const numberPhotos = listePhotos.length
     return (
         <div className='carrousel-main'>
-            <img className="carrousel-image" alt={listePhotos[plusun]} title={listePhotos[plusun]} src={listePhotos[plusun]} />
+            <img className="carrousel-image" key={keyName} alt={listePhotos[plusun]} title={listePhotos[plusun]} src={listePhotos[plusun]} />
             {numberPhotos > 1 &&
                 <div className='carrousel-setter'>
                     <div className='carrousel-arrows'>
