@@ -11,6 +11,9 @@ function FicheLogement() {
     const { logementId } = useParams()
     for (let logement of logements) {
         if (logementId === logement.id) {
+            let name = logement.host.name.split(' ')//sépare les noms et prénoms de l'hôte en créant un objet contenant un {"prénom","nom"
+
+
             return (<div className="flat-main">
                 <Carroussel keyName={logement.pictures} listePhotos={logement.pictures} />
 
@@ -31,8 +34,9 @@ function FicheLogement() {
 
                     <div className="logement-host">
                         <div className="host-ident">
-                            <h3 className="host-name">a mettre sur 2 lignes
-                            un" " espace vide, on met une blaise br{logement.host.name}</h3>
+                            <div className="host-name">
+                                <h3 className="host-name">{name[0]}<br></br>{name[1]}</h3>                              
+                            </div>
                             <img className="host-picture" key={logement.host.picture} src={logement.host.picture} alt={logement.host.name} />
 
                         </div>
