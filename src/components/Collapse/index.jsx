@@ -1,47 +1,47 @@
 import './collapse.scss'
-import { useState,useRef } from 'react'
+import { useState} from 'react'
 import icon from '../../assets/dropdown-up.svg'
+import React from 'react'
 
 
 
 function Collapse({ content, title, contentType = "list" }) {
 
   const [isopen, setOpen] = useState(false)
-  const [rotate, setRotate] = useState()
+  const [isrotate, setRotate] = useState()
   
-  const refer = useRef(null)
-  const counter = useRef({count : 0})
+
 
   function toogle() {
   
-    rotate === 'open' ? setRotate("close") : setRotate("open")
+    isrotate === 'open' ? setRotate("close") : setRotate("open")
     setOpen(!isopen)
-    counter.current.count++
-    console.log(counter.current.value)
+    
     
   }
   
 
   return (
-    <div className='collapse-main'>
+    <div className='collapse-main ' >
       <div className='collapse-title'>
         <div className='collapse-title-title'>{title}</div>
-        {<img className={` collapse-icon ${rotate}`} src={icon} alt={icon} onClick={ toogle} />}
+        {<img className={` collapse-icon ${isrotate}`} src={icon} alt={icon} onClick={ toogle} />}
 
       </div>
 
-      {isopen && <div className='collapse-content'>
+       { <div className={`collapse-content  ${isopen? 'visible': ''}`} >
         {contentType === 'list' ?
           (
             <ul className='collapse-content-text'>
               {content.map((elementList) =>
                 <li key={elementList}>{elementList}</li>)}
             </ul>
-          ) : (
-            <p className='collapse-content-text' ref={refer}>{content}</p>
+          ) :(
+            <p className={`collapse-content-text   `} >{content}</p>
           )}
       </div>}
     </div>
+
   )
 }
 

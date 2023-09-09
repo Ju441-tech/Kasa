@@ -1,6 +1,8 @@
 .collapse-main{
     width:100%;
+    overflow:hidden;
 }
+
 .collapse-title{
     display:flex;
     justify-content: space-between;
@@ -40,31 +42,38 @@
     font-weight: 500;
 }
 .collapse-content{  
-   padding-top:15px; 
-    width:100%;
-    background: #f6f6f6; 
-    border-radius: 5px;  
-    position:relative;
-    top:-5px;
-    z-index: -1;
-   
+    overflow:hidden;
+    text-overflow: hidden;    
+     width:100%;
+     background: #f6f6f6; 
+     border-radius: 5px;  
+     position:relative;   
+     z-index: -1;
+     transform:translateY(-100%);
+    
+     transition: 1s ;
+     
+
+}
+.visible{
+ 
+    transform:translateY(0);
+
 }
 
 
 .collapse-content-text{
-    overflow-y:hidden;
-    overflow-x:hidden;
+    position:relative;
     list-style: none;
-    margin:10px 24px 24px 24px;
+    margin:24px 24px 24px 24px;
     padding-bottom: 24px;
     font-size:18px;
     padding-left:0;
   
+    
 }
-@media screen and (width<768px){
+
+
   
-    .collapse-icon{
-        
-    }
-}
+
 
