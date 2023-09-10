@@ -59,13 +59,15 @@ $main-color: #ff6060;
     }
 
 }
-@media screen and (width<=320px){
-    .header-main{
-    flex-direction: column;
-    gap:20px;
+
+@media screen and (width<=320px) {
+    .header-main {
+        flex-direction: column;
+        gap: 20px;
     }
-    .nav{
-     
-        gap:20px;
+
+    .nav {
+
+        gap: 20px;
     }
 }

@@ -1,13 +1,59 @@
-*{
-    font-family:'Montserrat';
-    color:#ff6060;
+* {
+    font-family: 'Montserrat';
+    color: #ff6060;
 }
-.main{
-   height:60%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:30px;
-    margin: 30px;
 
+.error-main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.error-image {
+    margin-bottom: 0;
+    max-width: 597px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-subtitle {
+
+    font-size: 36px;
+    font-weight: 500;
+
+}
+
+.error-link-home {
+
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+@media screen and (width<=768px) {
+    .error-main {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .error-image {
+
+        object-fit: cover;
+        max-width: 198px;
+        margin: auto;
+    }
+
+    .error-subtitle {
+        font-size: 18px;
+    }
+
+    .error-link-home {
+        font-size: 14px;
+    }
 }

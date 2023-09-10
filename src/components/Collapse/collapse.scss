@@ -1,79 +1,81 @@
-.collapse-main{
-    width:100%;
-    overflow:hidden;
+.collapse-main {
+    width: 100%;
+    overflow: hidden;
 }
 
-.collapse-title{
-    display:flex;
+.collapse-title {
+    display: flex;
     justify-content: space-between;
     background: #ff6060;
-    color:white;
+    color: white;
     border-radius: 5px;
-    padding-top:10px;
-    padding-bottom: 10px; 
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
-.collapse-icon{
-    margin-right:10px;
-    margin-right:20px;
-    height:32px;
-    width:32px;
-    cursor:pointer;   
+.collapse-icon {
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
 }
-.collapse-icon img{
-    width:24px;
-    height:13.71px;
+
+.collapse-icon img {
+    width: 24px;
+    height: 13.71px;
 }
-.close{
-   
-    transition-duration: 0.7s;
-}
-.open{
-    transform:rotate(-180deg);
+
+.up {
+
     transition-duration: 0.7s;
 }
 
+.down {
+    transform: rotate(-180deg);
+    transition-duration: 0.7s;
+}
 
-.collapse-title-title{
-    color:#ffffff;
-    margin-left:10px;
-    font-size:24px;
+
+.collapse-title-title {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 24px;
     font-weight: 500;
 }
-.collapse-content{  
-    overflow:hidden;
-    text-overflow: hidden;    
-     width:100%;
-     background: #f6f6f6; 
-     border-radius: 5px;  
-     position:relative;   
-     z-index: -1;
-     transform:translateY(-100%);
-    
-     transition: 1s ;
-     
 
-}
-.visible{
- 
-    transform:translateY(0);
+.collapse-content {
+    overflow: hidden;
+    text-overflow: hidden;
+    width: 100%;
+    background: #f6f6f6;
+    border-radius: 5px;
+    position: relative;
+    z-index: -1;
+
 
 }
 
-
-.collapse-content-text{
-    position:relative;
+.collapse-content-text {
+    position: relative;
     list-style: none;
-    margin:24px 24px 24px 24px;
-    padding-bottom: 24px;
-    font-size:18px;
-    padding-left:0;
-  
-    
+    margin: 24px 24px 24px 24px;
+    padding-bottom: 0px;
+    font-size: 18px;
+    padding-left: 0;
+
+
 }
 
+@media screen and (width<=768px) {
+    .collapse-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
 
-  
+    .collapse-title-title {
+        font-size: 13px;
 
-
+    }
+}

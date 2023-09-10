@@ -7,11 +7,13 @@
     margin-bottom: 30px;
 
 }
-.collapse-title-title{
+
+.collapse-title-title {
     font-size: 24px;
 }
-.collapse-content-text{
-    font-size:18px;
+
+.collapse-content-text {
+    font-size: 18px;
 }
 
 @media screen and (width<=768px) {
@@ -19,10 +21,12 @@
         margin-left: 20px;
         margin-right: 20px;
     }
-    .collapse-title-title{
-        font-size:13px;
+
+    .collapse-title-title {
+        font-size: 13px;
     }
-    .collapse-content-text{
-        font-size:12px;
+
+    .collapse-content-text {
+        font-size: 12px;
     }
 }

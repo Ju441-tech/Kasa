@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Error from './pages/404'
 import Header from './components/Header'
 import About from './pages/About'
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 </style>
@@ -21,10 +22,12 @@ root.render(<React.StrictMode>
     <Header/>
     <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Flat/:logementId" element={<Flat />} />
+          <Route exact path="/Flat/:logementId" element={<Flat />}/>
           <Route path="/About" element={<About />} />
-          <Route path="*" element={<Error/>}/>
+          <Route path='*' element={<Error/>}/>
+          <Route path='/Error' element={<Error/>}/>
       </Routes>
       <Footer/>
-    </Router>
+    </Router >
   </React.StrictMode>)
+  

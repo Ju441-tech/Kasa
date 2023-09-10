@@ -1,23 +1,23 @@
 .rating-main {
     display: flex;
     justify-content: space-between;
-    width:196px;
-    height:36px;
-   
-    
+    width: 196px;
+    height: 36px;
 }
 
-.star{
-   width:24.75px;
-   height:24px;  
+.star {
+    width: 24.75px;
+    height: 24px;
 }
-@media screen and (width<=768px){
-    .star{
-        width:13.41px;
-        height:13px;  
-     }
-     .rating-main{
-     width:98px;
-     height:18px;
-     }
+
+@media screen and (width<=768px) {
+    .star {
+        width: 13.41px;
+        height: 13px;
+    }
+
+    .rating-main {
+        width: 98px;
+        height: 18px;
+    }
 }
